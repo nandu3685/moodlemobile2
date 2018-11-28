@@ -23,7 +23,7 @@
     <preference name="webviewbounce" value="false" />
     <preference name="AppendUserAgent" value="MoodleMobile" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="android-targetSdkVersion" value="27" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
@@ -124,10 +124,10 @@
     <plugin name="com-darryncampbell-cordova-plugin-intent" spec="^1.1.0" />
     <plugin name="cordova-sqlite-evcore-extbuild-free" spec="^0.9.7" />
     <plugin name="cordova-plugin-badge" spec="^0.8.7" />
-    <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
     <plugin name="phonegap-plugin-push" spec="~2.2.3" />
     <plugin name="cordova-android-support-gradle-release" spec="~2.0.1">
         <variable name="ANDROID_SUPPORT_VERSION" value="27.+" />
     </plugin>
+    <engine name="android" spec="~7.1.4" />
 </widget>
