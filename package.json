@@ -76,8 +76,9 @@
     "@types/cordova-plugin-network-information": "0.0.3",
     "@types/node": "^8.0.47",
     "@types/promise.prototype.finally": "^2.0.2",
+    "File": "^0.10.2",
     "chart.js": "^2.7.2",
-    "cordova-android": "7.0.0",
+    "cordova-android": "^6.3.0",
     "cordova-ios": "4.5.4",
     "font-awesome": "4.7.0",
     "ionic-angular": "^3.9.2",
@@ -114,7 +115,13 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "plugins": {
+      "phonegap-plugin-push": {},
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.+"
+      }
+    }
   },
   "main": "desktop/electron.js",
   "build": {
