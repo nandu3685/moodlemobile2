@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.hseionline" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HSEI</name>
-    <description>HSEI Elearnig App</description>
-    <author email="naren@oyetrade.com" href="http://www.oyetrade.com">Oye Trade team</author>
+    <description>HSEI Online</description>
+    <author email="naren@oyetrade.com" href="http://oyetrade.com">Oye Trade Team</author>
     <content src="index.html" />
     <access origin="*" />
     <access launch-external="yes" origin="tel:*" />
@@ -23,7 +23,7 @@
     <preference name="webviewbounce" value="false" />
     <preference name="AppendUserAgent" value="MoodleMobile" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="27" />
+    <preference name="android-targetSdkVersion" value="26" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
@@ -94,6 +94,7 @@
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
+    <plugin name="cordova-plugin-file" spec="^6.0.1" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="We need camera access to take pictures so you can attach them as part of your submissions." />
@@ -113,21 +114,22 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-clipboard" spec="^1.2.1" />
     <plugin name="nl.kingsquare.cordova.background-audio" spec="^1.0.1" />
+    <plugin name="phonegap-plugin-push" spec="https://github.com/moodlemobile/phonegap-plugin-push.git#moodle">
+        <variable name="SENDER_ID" value="694767596569" />
+    </plugin>
     <plugin name="cordova-plugin-customurlscheme" spec="^4.3.0">
         <variable name="URL_SCHEME" value="moodlemobile" />
     </plugin>
-    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="cordova-plugin-zip" spec="^3.1.0" />
     <plugin name="cordova-plugin-local-notifications-mm" spec="^1.0.13" />
     <plugin name="cordova-plugin-file-opener2" spec="^2.0.19" />
     <plugin name="com-darryncampbell-cordova-plugin-intent" spec="^1.1.0" />
     <plugin name="cordova-sqlite-evcore-extbuild-free" spec="^0.9.7" />
     <plugin name="cordova-plugin-badge" spec="^0.8.7" />
-    <engine name="ios" spec="4.5.4" />
-    <plugin name="phonegap-plugin-push" spec="~2.2.3" />
-    <plugin name="cordova-android-support-gradle-release" spec="~2.0.1">
-        <variable name="ANDROID_SUPPORT_VERSION" value="27.+" />
+    <plugin name="cordova-android-support-gradle-release" spec="^1.4.4">
+        <variable name="ANDROID_SUPPORT_VERSION" value="27.1.0" />
     </plugin>
-    <engine name="android" spec="~7.1.0" />
-    <plugin name="cordova-plugin-file" spec="^6.0.1" />
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="~7.0.0" />
+    <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
 </widget>
